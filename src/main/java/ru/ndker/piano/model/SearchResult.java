@@ -1,11 +1,28 @@
 package ru.ndker.piano.model;
 
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class SearchResult {
-    private long id;
-    private Date date;
-    private String title;
-    private String author;
-    private String sourceLink;
+
+    private List<SearchResultItem> data = new ArrayList<>();
+
+    private AtomicBoolean hasNext = new AtomicBoolean(false);
+    private AtomicBoolean locked = new AtomicBoolean(false);
+
+    public SearchResult() {
+    }
+
+    public List<SearchResultItem> getData() {
+        return data;
+    }
+
+    public AtomicBoolean getHasNext() {
+        return hasNext;
+    }
+
+    public AtomicBoolean getLocked() {
+        return locked;
+    }
 }

@@ -18,7 +18,7 @@ out/
 *.iws
 *.iml
 *.ipr
-applicaton.properties
+
 
 nbproject/private/
 build/
@@ -27,3 +27,5 @@ dist/
 nbdist/
 .nb-gradle/
 /log/
+applicaton.properties
+/src/main/resources/applicaton.properties
