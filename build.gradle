@@ -26,4 +26,12 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter")
     testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compileOnly files("${project.rootDir}/libs/javafx.base.jar")
+    compileOnly files("${project.rootDir}/libs/javafx.graphics.jar")
+    compileOnly files("${project.rootDir}/libs/javafx.media.jar")
+    compileOnly files("${project.rootDir}/libs/javafx.fxml.jar")
+    compileOnly files("${project.rootDir}/libs/javafx.controls.jar")
+    compileOnly files("${project.rootDir}/libs/javafx.web.jar")
+    compileOnly files("${project.rootDir}/libs/javafx-swt.jar") 
 }

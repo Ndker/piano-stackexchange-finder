@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.ndker.piano.controller.MainController"
+            prefHeight="400.0" prefWidth="400.0">
+    <Button fx:id="load"
+            text="Find"
+            AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10"
+            onMouseClicked="#onClickLoad"/>
+    <fx:include
+            AnchorPane.topAnchor="40" AnchorPane.leftAnchor="10"
+            AnchorPane.bottomAnchor="10"
+            source="searchResultTable.fxml"/>
+</AnchorPane>

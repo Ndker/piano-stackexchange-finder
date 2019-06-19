@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="searchResultTable" prefWidth="350.0"
+           xmlns="http://javafx.com/javafx/8.0.121"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ndker.piano.controller.SearchResultController">
+    <columns>
+        <TableColumn fx:id="id" prefWidth="30.0" text="ID"/>
+        <TableColumn fx:id="date" prefWidth="50.0" text="Date"/>
+        <TableColumn fx:id="title" prefWidth="200.0" text="Title"/>
+        <TableColumn fx:id="author" prefWidth="100.0" text="Author"/>
+        <TableColumn fx:id="sourceLink" prefWidth="200.0" text="Source"/>
+    </columns>
+</TableView>
