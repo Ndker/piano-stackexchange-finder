@@ -45,6 +45,7 @@ _Java 11 required_
                             "date": "2019-06-19T12:00:00+03:00",
                             "title": "HAproxy: Tomcat and OutOfMemory",
                             "author: "user3065205",
+                            "answered": true,
                             "sourceLink": "https://stackoverflow.com/questions/32048236/haproxy-tomcat-and-outofmemory"
                         },
                         {
