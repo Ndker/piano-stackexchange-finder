@@ -50,16 +50,16 @@ public class SearchManager {
     }
 
     /**
-     * Checking availability of results.
+     * Processing requested data.
      * After receive of request, at first obtain a fixed number of questions.
      * If the user has reached off limit, try to get next questions from service.
      *
      * @param id   unique id fo request
      * @param page requested page.
      * @param size requested questions per page.
-     * @return availability of results.
+     * @return true - results is available, false - searching results in process.
      */
-    public boolean isResultReady(String id, int page, int size) {
+    public boolean processDataRequest(String id, int page, int size) {
         var result = results.get(id);
         if (result == null)
             return false;

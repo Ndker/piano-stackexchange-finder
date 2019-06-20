@@ -43,7 +43,7 @@ public class SearchController {
         if (page <= 0 || size <= 0)
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        if (searchManager.isResultReady(requestId, page, size)) {
+        if (searchManager.processDataRequest(requestId, page, size)) {
             var result = searchManager.getResult(requestId);
             boolean hasNext = result.getData().size() > page * size || result.getHasNext().get();
             int totalPages = !result.getHasNext().get() ?

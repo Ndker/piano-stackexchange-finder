@@ -77,12 +77,6 @@ public class StackExchangeClient implements SearchClient {
         ResponseEntity<StackExchangeResultDto> response = restTemplate.getForEntity(
                 builder.toUriString(), StackExchangeResultDto.class);
         return response.getBody();
-//        var mapper = new ObjectMapper();
-//        try {
-//            return mapper.readValue(response.getBody(), StackExchangeResultDto.class);
-//        } catch (IOException e) {
-//            return null;
-//        }
     }
 
     private SearchResultItem mapItem(StackExchangeResultItemDto source) {
