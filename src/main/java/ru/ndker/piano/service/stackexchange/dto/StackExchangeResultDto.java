@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+// Setters and getters are used to mappers.
+@SuppressWarnings("unused")
 @JsonIgnoreProperties
 public class StackExchangeResultDto {
 

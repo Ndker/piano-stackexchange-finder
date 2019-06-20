@@ -2,6 +2,8 @@ package ru.ndker.piano.api.dto;
 
 import java.util.List;
 
+// Setters and getters are used to mappers.
+@SuppressWarnings("unused")
 public class SearchResultDto {
 
     private final List<SearchResultItemDto> data;

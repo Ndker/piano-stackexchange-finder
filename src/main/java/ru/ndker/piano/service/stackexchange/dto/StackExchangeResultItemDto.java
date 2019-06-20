@@ -3,6 +3,8 @@ package ru.ndker.piano.service.stackexchange.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+// Setters and getters are used to mappers.
+@SuppressWarnings("unused")
 @JsonIgnoreProperties
 public class StackExchangeResultItemDto {
 
@@ -13,6 +15,9 @@ public class StackExchangeResultItemDto {
 
     private String link;
     private String title;
+
+    @JsonProperty("is_answered")
+    private boolean answered;
 
     public long getCreationDate() {
         return creationDate;
@@ -36,6 +41,14 @@ public class StackExchangeResultItemDto {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public boolean isAnswered() {
+        return answered;
+    }
+
+    public void setAnswered(boolean answered) {
+        this.answered = answered;
     }
 
     public StackExchangeResultItemOwnerDto getOwner() {

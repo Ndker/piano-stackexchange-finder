@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.util.Date;
 
+// Setters and getters are used to mappers.
+@SuppressWarnings("unused")
 public class SearchResultItemDto {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
@@ -14,6 +16,8 @@ public class SearchResultItemDto {
     private String author;
 
     private String sourceLink;
+
+    private boolean answered;
 
     public Date getDate() {
         return date;
@@ -45,5 +49,13 @@ public class SearchResultItemDto {
 
     public void setSourceLink(String sourceLink) {
         this.sourceLink = sourceLink;
+    }
+
+    public boolean isAnswered() {
+        return answered;
+    }
+
+    public void setAnswered(boolean answered) {
+        this.answered = answered;
     }
 }

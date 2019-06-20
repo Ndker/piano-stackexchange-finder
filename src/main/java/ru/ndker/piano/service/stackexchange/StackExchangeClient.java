@@ -85,6 +85,7 @@ public class StackExchangeClient implements SearchClient {
         item.setTitle(source.getTitle());
         item.setSourceLink(source.getLink());
         item.setDate(new Date(source.getCreationDate() * 1000));
+        item.setAnswered(source.isAnswered());
         return item;
     }
 }
